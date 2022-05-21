@@ -5,67 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: vpnhat-彰化Hinet-dip, server: 140.207.232.8, port: 26045, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 4, server: 140.207.232.8, port: 26061, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 8, server: 45.90.208.30, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2, server: 45.90.208.15, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 3, server: 45.90.208.22, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 3, server: 140.207.232.8, port: 26046, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港Azure, server: 140.207.232.8, port: 26015, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港Azure 2, server: 140.207.232.8, port: 26014, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 5, server: 140.207.232.8, port: 26059, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 2, server: 140.207.232.8, port: 26044, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 10, server: 45.90.208.26, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_267, server: 116.129.253.134, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_273, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_279, server: 116.129.253.130, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_263, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_278, server: 116.129.253.130, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_264, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_275, server: 116.129.253.134, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_272, server: 116.129.253.134, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_277, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_274, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_276, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_270, server: 116.129.253.191, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_268, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_271, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 台湾*TG:＠yzcloud_19, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 台湾*TG:＠yzcloud_24, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: 台湾*TG:＠yzcloud_28, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,82 +108,98 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -175,17 +215,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnhat-彰化Hinet-dip
-      - vpnhat-彰化Hinet-dip 4
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 3
-      - vpnhat-香港Azure
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 2
-      - 香港-tg频道:@bpjzx2 10
+      - Relay_🇨🇳CN-🇹🇼TW_267
+      - Relay_🇨🇳CN-🇹🇼TW_273
+      - Relay_🇨🇳CN-🇹🇼TW_279
+      - Relay_🇨🇳CN-🇹🇼TW_263
+      - Relay_🇨🇳CN-🇹🇼TW_278
+      - Relay_🇨🇳CN-🇹🇼TW_264
+      - Relay_🇨🇳CN-🇹🇼TW_275
+      - Relay_🇨🇳CN-🇹🇼TW_272
+      - Relay_🇨🇳CN-🇹🇼TW_277
+      - Relay_🇨🇳CN-🇹🇼TW_274
+      - Relay_🇨🇳CN-🇹🇼TW_276
+      - Relay_🇨🇳CN-🇹🇼TW_270
+      - Relay_🇨🇳CN-🇹🇼TW_268
+      - Relay_🇨🇳CN-🇹🇼TW_271
+      - 台湾*TG:＠yzcloud_19
+      - 台湾*TG:＠yzcloud_24
+      - 台湾*TG:＠yzcloud_28
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
