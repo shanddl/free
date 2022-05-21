@@ -5,71 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_241 |11.06Mb, server: iepl-zebra.19900101.xyz, port: 777, type: vmess, uuid: 1cfaa36d-9912-3433-b9bc-fd5b5085613d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 10, server: 45.90.208.26, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 8, server: 45.90.208.30, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@bpjzx2 3, server: 45.90.208.22, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 2, server: 140.207.232.8, port: 26044, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 5, server: 140.207.232.8, port: 26059, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 4, server: 140.207.232.8, port: 26061, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-香港Azure 2, server: 140.207.232.8, port: 26014, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: vpnhat-彰化Hinet-dip 3, server: 140.207.232.8, port: 26046, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnhat-彰化Hinet-dip, server: 140.207.232.8, port: 26045, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 4, server: 140.207.232.8, port: 26061, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 8, server: 45.90.208.30, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
   - {name: 香港-tg频道:@bpjzx2, server: 45.90.208.15, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 3, server: 45.90.208.22, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 3, server: 140.207.232.8, port: 26046, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: vpnhat-香港Azure, server: 140.207.232.8, port: 26015, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-香港Azure 2, server: 140.207.232.8, port: 26014, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 5, server: 140.207.232.8, port: 26059, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: vpnhat-彰化Hinet-dip 2, server: 140.207.232.8, port: 26044, type: vmess, uuid: 68a8c397-1f27-35c0-818e-ef7f2d360e61, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港-tg频道:@bpjzx2 10, server: 45.90.208.26, port: 443, type: trojan, password: Aymde8JN7M25qaTPRg, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,86 +84,82 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -183,18 +175,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_241 |11.06Mb
-      - 香港-tg频道:@bpjzx2 10
-      - 香港-tg频道:@bpjzx2 8
-      - 香港-tg频道:@bpjzx2 3
-      - vpnhat-彰化Hinet-dip 2
-      - vpnhat-彰化Hinet-dip 5
-      - vpnhat-彰化Hinet-dip 4
-      - vpnhat-香港Azure 2
-      - vpnhat-彰化Hinet-dip 3
       - vpnhat-彰化Hinet-dip
+      - vpnhat-彰化Hinet-dip 4
+      - 香港-tg频道:@bpjzx2 8
       - 香港-tg频道:@bpjzx2
+      - 香港-tg频道:@bpjzx2 3
+      - vpnhat-彰化Hinet-dip 3
       - vpnhat-香港Azure
+      - vpnhat-香港Azure 2
+      - vpnhat-彰化Hinet-dip 5
+      - vpnhat-彰化Hinet-dip 2
+      - 香港-tg频道:@bpjzx2 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
