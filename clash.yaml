@@ -5,79 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "C|V3[移动]新加坡01", server: cm02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: sg01.db-link.in}}, udp: true}
-  - {name: "C|V3[移动]日本01", server: cm02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: jp01.db-link.in}}, udp: true}
-  - {name: "C|V3[移动]香港02", server: cm02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk02.db-link.in}}, udp: true}
-  - {name: "D|V2-[移动]香港02", server: cm02.db-link.in, port: 13311, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk3.db-link.in}}, udp: true}
-  - {name: "D|V2[移动]韩国01", server: cm02.db-link.in, port: 13351, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: sk1.db-link.in}}, udp: true}
-  - {name: "E|V1[移动]台湾01", server: cm01.db-link.in, port: 13341, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: tw1.db-link.in}}, udp: true}
-  - {name: "E|V1[移动]香港01", server: cm01.db-link.in, port: 13311, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk1.db-link.in}}, udp: true}
-  - {name: "E|V1[移动]香港02", server: cm01.db-link.in, port: 13311, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk3.db-link.in}}, udp: true}
-  - {name: "C|V3[联通]日本01", server: cu02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: jp01.db-link.in}}, udp: true}
-  - {name: "C|V3[联通]香港02", server: cu02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk02.db-link.in}}, udp: true}
-  - {name: "D|V2[移动]孟买01", server: cm02.db-link.in, port: 13361, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: mu1.db-link.in}}, udp: true}
-  - {name: "D|V2[联通]韩国01", server: cu02.db-link.in, port: 13351, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: sk1.db-link.in}}, udp: true}
-  - {name: "C|V3[联通]新加坡01", server: cu02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: sg01.db-link.in}}, udp: true}
-  - {name: "C|V3[移动]香港01", server: cm02.db-link.in, port: 13366, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: hk01.db-link.in}}, udp: true}
+  - {name: 【K】新加坡 普通 4 - DO, server: nkb.boom.party, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 1 - DO, server: nk8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 5 - DO, server: nkc.boom.party, port: 22000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【I】日本 VIP 6 - Azure, server: nf6.boom.party, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【F】新加坡  VIP 1 - Linode, server: n17.boom.party, port: 25000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【I】日本 VIP 8 - Azure, server: nf8.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【F】新加坡  VIP 9 - Linode, server: n30.boom.party, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【K】新加坡 普通 7 - DO, server: nke.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【C】日本 VIP Y - Leaseweb, server: n116.boom.party, port: 33200, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【F】新加坡  VIP A - Linode, server: n11.boom.party, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 VIP 12 - Nerocloud, server: jp17.boom.party, port: 39700, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【I】日本 VIP 3 - Azure, server: nf3.boom.party, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 VIP 13 - Nerocloud, server: jp18.boom.party, port: 39800, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 VIP 1 - Nerocloud, server: jp6.boom.party, port: 35000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 VIP 10 - Nerocloud, server: jp15.boom.party, port: 39500, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【A】香港 普通 E - Azure, server: ntemp19.boom.party, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
+  - {name: 【N】日本 普通 4 - Nerocloud, server: jp4.boom.party, port: 33000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 388137:Za5sSX, obfs-param: download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,90 +108,96 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]香港02
-      - C|V3[移动]香港01
+      - 【A】香港 普通 E - Azure
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -195,20 +213,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - C|V3[移动]新加坡01
-      - C|V3[移动]日本01
-      - C|V3[移动]香港02
-      - D|V2-[移动]香港02
-      - D|V2[移动]韩国01
-      - E|V1[移动]台湾01
-      - E|V1[移动]香港01
-      - E|V1[移动]香港02
-      - C|V3[联通]日本01
-      - C|V3[联通]香港02
-      - D|V2[移动]孟买01
-      - D|V2[联通]韩国01
-      - C|V3[联通]新加坡01
-      - C|V3[移动]香港01
+      - 【K】新加坡 普通 4 - DO
+      - 【K】新加坡 普通 1 - DO
+      - 【K】新加坡 普通 5 - DO
+      - 【I】日本 VIP 6 - Azure
+      - 【F】新加坡  VIP 1 - Linode
+      - 【I】日本 VIP 8 - Azure
+      - 【F】新加坡  VIP 9 - Linode
+      - 【K】新加坡 普通 7 - DO
+      - 【C】日本 VIP Y - Leaseweb
+      - 【F】新加坡  VIP A - Linode
+      - 【N】日本 VIP 12 - Nerocloud
+      - 【I】日本 VIP 3 - Azure
+      - 【N】日本 VIP 13 - Nerocloud
+      - 【N】日本 VIP 1 - Nerocloud
+      - 【N】日本 VIP 10 - Nerocloud
+      - 【A】香港 普通 E - Azure
+      - 【N】日本 普通 4 - Nerocloud
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
