@@ -1,3 +1,4 @@
+
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -5,87 +6,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AU|高速|TG频道FProxies整理|0524发布|, server: 43.129.87.145, port: 443, type: vmess, uuid: 5bb4d785-4933-44cb-a162-d9a74625d2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "[V2] 香港 流媒体", server: 120.233.187.199, port: 20001, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: 香港2|V2Ray|流媒体解锁, server: hk2.kxwfy.com, port: 20012, type: vmess, uuid: 75988c53-4f2e-3083-99d4-a2cc768b67b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk2.kxwfy.com}}, udp: true}
   - {name: 香港2|V2Ray|流媒体解锁 2, server: hk2.kxwfy.com, port: 20012, type: vmess, uuid: c73a3e37-1ce6-3c92-a36c-7dfa220c4f4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk2.kxwfy.com}}, udp: true}
-  - {name: "[V1] 日本 1", server: 116.129.253.128, port: 20010, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: "[V1] 日本 1 2", server: 116.129.253.128, port: 20010, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: "[V2] 香港 流媒体", server: 120.233.187.199, port: 20001, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
   - {name: 香港1|V2Ray|流媒体优选, server: hk1.kxwfy.com, port: 20020, type: vmess, uuid: 75988c53-4f2e-3083-99d4-a2cc768b67b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /mfyun.m3u8, headers: {Host: hk1.kxwfy.com}}, udp: true}
-  - {name: "[V1] 日本 2", server: 116.129.253.128, port: 20011, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: "[V2] 台湾 流媒体", server: 120.233.187.199, port: 20004, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: "[V2] 日本 流媒体 2", server: 120.233.187.199, port: 20014, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
   - {name: "[V2] 香港 流媒体 2", server: 120.233.187.199, port: 20001, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: "[V2] 台湾 流媒体 2", server: 120.233.187.199, port: 20004, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: 香港2|V2Ray|流媒体解锁, server: hk2.kxwfy.com, port: 20012, type: vmess, uuid: 75988c53-4f2e-3083-99d4-a2cc768b67b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: hk2.kxwfy.com}}, udp: true}
   - {name: 香港1|V2Ray|流媒体优选 2, server: hk1.kxwfy.com, port: 20020, type: vmess, uuid: c73a3e37-1ce6-3c92-a36c-7dfa220c4f4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /mfyun.m3u8, headers: {Host: hk1.kxwfy.com}}, udp: true}
+  - {name: "[V2] 台湾 流媒体 2", server: 120.233.187.199, port: 20004, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: "[V2] 台湾 流媒体", server: 120.233.187.199, port: 20004, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: AU|高速|TG频道FProxies整理|0524发布|, server: 43.129.87.145, port: 443, type: vmess, uuid: 5bb4d785-4933-44cb-a162-d9a74625d2ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: "[V2] 日本 流媒体 2 2", server: 120.233.187.199, port: 20014, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
+  - {name: "[V2] 日本 流媒体 2", server: 120.233.187.199, port: 20014, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
   - {name: "[V2] 日本 流媒体 1", server: 120.233.187.199, port: 20003, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: "[V1] 新加坡 1", server: 116.129.253.128, port: 20006, type: trojan, password: 97a6efa77c0a415cccbcc292b59d11f95ca2ec0d4aedc6eef7d6e28e50f89fdc, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,99 +89,83 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V2] 台湾 流媒体"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,22 +181,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AU|高速|TG频道FProxies整理|0524发布|
-      - "[V2] 香港 流媒体"
-      - 香港2|V2Ray|流媒体解锁
       - 香港2|V2Ray|流媒体解锁 2
-      - "[V1] 日本 1"
-      - "[V1] 日本 1 2"
+      - "[V2] 香港 流媒体"
       - 香港1|V2Ray|流媒体优选
-      - "[V1] 日本 2"
-      - "[V2] 台湾 流媒体"
-      - "[V2] 日本 流媒体 2"
       - "[V2] 香港 流媒体 2"
-      - "[V2] 台湾 流媒体 2"
+      - 香港2|V2Ray|流媒体解锁
       - 香港1|V2Ray|流媒体优选 2
+      - "[V2] 台湾 流媒体 2"
+      - "[V2] 台湾 流媒体"
+      - AU|高速|TG频道FProxies整理|0524发布|
       - "[V2] 日本 流媒体 2 2"
+      - "[V2] 日本 流媒体 2"
       - "[V2] 日本 流媒体 1"
-      - "[V1] 新加坡 1"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
